@@ -1,0 +1,132 @@
+/* stylenews.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.eventsmenu, .newsmenu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+    background-color: #1d1d1d;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.newsmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+.eventsmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+.myticketmenu {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    border-radius: 40px;
+}
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease; /* Menambahkan transisi untuk perubahan opacity */
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+/* ------ MY TICKET ------ */
+
+.content {
+    padding: 0 40px;
+}
+
+.content p {
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content table, .content th, .content td {
+    border: 1px solid #ddd; /* Add border to table, th, and td for better visibility */
+}
+
+.content th, .content td {
+    padding: 20px 40px;
+    text-align: center; /* Center the text within the cells */
+}

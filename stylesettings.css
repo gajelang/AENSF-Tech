@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: all 0.3s ease; /* Efek transisi agar perubahan lebih mulus */
+    background-color: #1d1d1d;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.menu a:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+    transition: all 0.3s ease;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+    transition: all 0.3s ease;
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+.rightside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.settings {
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.settings:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.content label {
+    width: 70%; /* Adjust the width as needed */
+    font-weight: bold;
+}
+
+.content input {
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+.update {
+    padding: 10px;
+    width: 20%;
+}
+
+.p {
+    opacity: 0.4;
+    float: right;
+}
+
+.username {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.email {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.date {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.phone {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.instagram {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gender {
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.judul {
+    font-size: 3em;
+    font-weight: bold;
+}
+

@@ -1,0 +1,157 @@
+/* HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.tagline p{
+    color: white;
+    font-size: 12em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.explore a {
+    color: white;
+    text-decoration:none;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.explore a:hover {
+    color: #f0f0f0;
+    background-color: #0009E7;
+    padding: 10px 50px;
+    transition: all 0.3s ease;
+    font-size: 1.3em;
+}
+
+/* MAP */
+
+.map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map iframe{
+    padding: 40px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* GUIDE */
+.guide {
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.hotel p {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.hotelcontainer {
+    display: flex;
+    gap: 15px;
+}
+
+.hotelcontainer a {
+    background-color: #191919;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hotelcontainer a:hover{
+    background-color: #0009E7;
+    padding: 10px 50px;
+    transition: all 0.3s ease;
+}
+
+/* EVENT CARD CONTAINER */
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 40px 40px 40px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box; /* Include this property to ensure padding and border are included in the total width */
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.event-details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.event-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 40px; /* Add a 40px margin below the title */
+}
+
+.event-description {
+    margin-top: 15px;
+    font-size: 1em;
+    margin-bottom: 10px; /* Add a 10px margin between description and other elements */
+}
+
+.event-button {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #191919;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.event-button:hover {
+    background-color: #0009E7;
+}
+

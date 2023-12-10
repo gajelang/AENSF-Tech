@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.leftside {
+  display: flex;
+  align-items: center;
+}
+
+.leftside img {
+  width: 100px;
+  margin-right: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  font-size: 1.3em;
+  transition: all 0.3s ease;
+  background-color: #1d1d1d;
+  padding: 10px 25px;
+  border-radius: 40px;
+}
+
+.menu a:hover {
+  padding: 10px 65px;
+  background-color: #0009e7;
+  transition: all 0.3s ease;
+}
+
+.login {
+  padding: 15px 30px;
+  text-decoration: none;
+  border-style: solid;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+
+.signup {
+  background-color: #0009e7;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+/* New Events Line */
+.new-event {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.add-new-event {
+  background-color: #0009e7;
+  color: white;
+  text-decoration: none;
+  padding: 25px 50px;
+  border-radius: 15px;
+}
+
+.add-new-event a {
+  text-decoration: none;
+  color: white;
+}
+
+.status-container {
+  display: flex;
+  padding: 25px 50px;
+  gap: 50px;
+}
+
+.total-events p {
+  font-weight: bold;
+}
+
+/* Events Manager */
+.events-manager {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.events-manager h2 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+.event-list {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; /* Add margin between event cards */
+}
+
+/* Adjustments for the ID, Title, and Date */
+.event-id {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px; /* Add margin below ID */
+}
+
+.event-title {
+  font-size: 1.5em;
+  margin-bottom: 10px; /* Add margin below title */
+}
+
+.event-date {
+  margin-top: 5px;
+  margin-bottom: 10px; /* Add margin below date */
+}
+
+/* Add space below the table */
+.event-list::after {
+  content: '';
+  display: block;
+  height: 50px;
+}
+
+.edit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  border-style: solid;
+}
+
+
+.edit-button:hover {
+  background-color: #0009e7;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr.active {
+  background-color: #ededed;
+}
+
+tr.completed {
+  background-color: #000000;
+}
+
+/* Add this to your existing CSS file */
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  gap: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #0009e7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #000;
+}

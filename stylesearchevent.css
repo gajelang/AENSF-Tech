@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.newsmenu, .myticketmenu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+
+    background-color: #1d1d1d ;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.myticketmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+.newsmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+
+.eventsmenu {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    border-radius: 40px;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: row;
+}
+
+.greetinglogout {
+    display: flex;
+}
+
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease; /* Menambahkan transisi untuk perubahan opacity */
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+/* HASIL SEARCH */
+
+/* Center the entire grid */
+.events-center-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Container for the event cards */
+/* Container for the event cards */
+.events-container {
+    display: flex;
+    justify-content: space-around; /* Menggunakan space-around agar kartu tersebar secara merata */
+    flex-wrap: wrap; /* Membungkus kartu ke baris baru jika tidak cukup lebar */
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33.33% - 10px); /* 33.33% untuk tiga kartu dalam satu baris, dikurangi margin */
+    margin-bottom: 20px; /* Menambahkan margin antara kartu-kartu */
+    max-width: 400px;
+}
+
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.event-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-date,
+.event-location {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    margin-top: 15px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.event-button {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #191919;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #0009E7;
+}
+
+
+
+/* SEARCH BAR */
+
+.serachcontainer {
+    margin: 40px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    border-style: solid;
+}
+
+.contsearch {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: 70%; /* Adjust the width as needed */
+    outline: none;
+}
+
+select {
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #191919;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #0009E7;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}

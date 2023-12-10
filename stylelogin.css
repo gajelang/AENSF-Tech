@@ -1,0 +1,125 @@
+body {
+    font-family: Archivo;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    background-color: #101010;
+    font-size: 4em;
+    border-radius: 25px;
+    color: white;
+}
+
+.leftside img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.rightside {
+    width: 30%;
+    background-color: #000000;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Set a darker color for headings */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #ffffff; /* Set a slightly darker color for labels */
+}
+
+input {
+    width: 80%;
+    padding: 10px; /* Increase padding for better input appearance */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    transition: border-color 0.3s; /* Add a smooth transition effect on input focus */
+    border-radius: 35px;
+    text-align: center;
+}
+
+.submitbutton {
+    margin-top: 20px;
+    width: 40%;
+    background-color: #000000;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.submitbutton:hover {
+    width: 80%;
+    background-color: #0009E7;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.register {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register a {
+    color: white;
+    padding: 10px 25px;
+    border-style: solid;
+    border-radius: 35px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.register a:hover {
+    width: 80%;
+    background-color: #0009E7;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+

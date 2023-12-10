@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+}
+
+/* HOME BANNER */
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: all 0.3s ease; /* Efek transisi agar perubahan lebih mulus */
+    background-color: #1d1d1d;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.menu a:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+    transition: all 0.3s ease;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+    transition: all 0.3s ease;
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+.rightside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.settings {
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.settings:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.headerheadline {
+    font-size: 1.5em;
+    margin-right: 25px;
+}
+
+/* ------- SEARCH BAR -------- */
+/* Styling for Search Bar */
+.searchcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.searchbar {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contsearch {
+    display: flex;
+    align-items: center;
+}
+
+.contsearch svg {
+    width: 20px;
+    height: 20px;
+    padding: 0 20px;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 15px 30px 15px 20px;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+}
+
+/* SEARCH BAR */
+
+.serachcontainer {
+    margin: 40px;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 100%;
+    border-style: solid;
+}
+
+.contsearch {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: 70%; /* Adjust the width as needed */
+    outline: none;
+}
+
+select {
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #191919;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #0009E7;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+/* BANNER SLIDE */
+
+/* ------ EVENT SLIDER ------ */
+.eventslidercontainer {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px 40px; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.eventslider {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.eventslide {
+    width: 25%; /* Sesuaikan dengan kebutuhan Anda */
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.eventslide img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-buttons button {
+    background-color: #1d1d1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-buttons button:hover {
+    background-color: #0009E7;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    
+}
+
+
+/* ------- KATEGORI KONSER ------ */
+
+.containerkategori {
+    margin: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jogja, .jakarta, .surabaya, .bandung, .bali {
+    color: white;
+    border-radius: 20px;
+    max-width: 18%;
+    align-items: center;
+    text-align: center;
+    transition: border 0.3s ease; /* Efek transisi untuk smooth transition */
+}
+
+.jogja img, .jakarta img, .surabaya img, .bandung img, .bali img {
+    width: 100%; /* Menggunakan width 100% untuk memastikan gambar mengikuti lebar container */
+    max-width: 100%; /* Menetapkan lebar maksimum sejajar dengan lebar container */
+    height: auto; /* Menjaga aspek rasio gambar */
+    border-radius: 20px;
+}
+
+.headerkategori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.headerkategori p{
+    font-size: 2.5em;
+    font-weight:bolder;
+    color: rgb(5, 5, 5);
+    align-items: center;
+}
+
+
+  
+
+/* ------- POPULAR EVENTS -------*/
+.eventcontainer {
+    margin-top: 80px;
+    padding: 0 40px;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Mengubah orientasi dari row ke column */
+}
+
+.headerevent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headerevent p{
+    font-size: 2.5em;
+    font-weight:bolder;
+    color: rgb(5, 5, 5);
+    align-items: center;
+}
+
+.eventmain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.eventscontainer {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.eventscontainer img {
+    width: 95%; /* Setiap event card memiliki lebar 32% dari parentnya */
+    margin-bottom: 20px; /* Menambah margin antar event card */
+}
+
+.eventcard {
+    background-color: #fff;
+    margin: 0 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan efek shadow di sini */
+}
+
+
+.eventcard img {
+    margin-top: 10px;
+}
+
+.event-title {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.event-date {
+    margin-top: 20px;
+}
+
+.event-button {
+    display: inline-block;
+    padding: 10px 40px; /* Sesuaikan dengan kebutuhan Anda */
+    margin-top: 30px; /* Sesuaikan dengan kebutuhan Anda */
+    margin-bottom: 20px;
+    background-color: #191919; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    border-radius: 30px; /* Membuat sudut lengkung pada tombol */
+    transition: all 0.3s ease;
+}
+
+.event-button:hover {
+    transition: all 0.3s ease;
+    background-color: #0009E7;
+    padding: 10px 70px;
+}
+
+
+/* ------ HOME BANNER ------ */
+
+.bannercontainer img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.bannercontainer {
+    margin:  40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+
+/* ------ NEWS ------- */
+
+.NewsContainer {
+    margin-top: 80px;
+    padding: 0 40px;
+}
+
+.WrapperNews {
+    margin-top: 30px;
+    display: flex;
+    overflow-x: auto;
+    font-family: 'DM Sans', sans-serif;
+    /* Menambahkan scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #d7d7d7 #f1f1f1; /* Warna thumb dan track */
+    margin-bottom: 20px;
+    padding: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #141414;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+
+/* Webkit (Chrome, Safari, Opera) */
+.WrapperNews::-webkit-scrollbar {
+    padding: 40px 0;
+  width: 12px; /* Lebar scrollbar */
+}
+
+.WrapperNews::-webkit-scrollbar-thumb {
+background-color: #3c3c3c; /* Warna thumb */
+  border-radius: 10px; /* Sudut border thumb */
+}
+
+.newscont {
+    background-color: #ffffff;
+    max-width: 550px;
+    min-width: 550px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+}
+
+.newscont h3 {
+    font-size: 25px;
+    margin: 25px 35px 20px 40px;
+}
+
+.newscont p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.newscont img {
+    width: 100%;
+}
+
+.bottomnews {
+    display: flex;
+    margin: 25px 35px 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomnews p {
+    font-size: 18px;
+}
+
+.bottomnews button {
+    outline: none;
+    border: none;
+    padding: 10px 60px 10px 60px;
+    border-radius: 50px;
+}
+
+.news-button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background-color: #191919;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.news-button:hover {
+    background-color: #0009E7;
+}
+
+
+/* ------ ABOUT US ------ */
+.about-container {
+    background-color: #202020; /* Warna background untuk bagian About Us */
+    padding: 40px;
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 40px 40px 0px 0;
+}
+
+.about-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.about-content hr{
+    opacity: 40%;
+}
+
+.about-content h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.containeraboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftaboutus {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.rightaboutus {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.rightaboutus img {
+    opacity: 30%;
+}
+
+/* CLEARANCE RESPONSIF */
+.menumobile {
+    display: none;
+}
+
+.headlinebannermobile {
+    display: none;
+}
+
+.mobilebanner {
+    display: none;
+}
+
+.containerkategorimobile {
+    display: none;
+}
+
+/* RESPONSIF */
+
+/* Add this at the end of your existing CSS */
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menumobile {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menumobile a{
+        padding: 10px 25px;
+        background-color: #141414;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+
+    .serachcontainer {
+        display: none;
+    }
+
+    /* Home Banner */
+
+    .bannercontainer {
+        display: none;
+    }
+
+    .headlinebannermobile {
+        text-align: center;
+    }
+
+    .headerheadline {
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+
+    .welcome {
+        font-size: 4em;
+    }
+
+    .eventbanner {
+        padding: 40px;
+    }
+
+    .newsbanner {
+        padding: 0 40px;
+    }
+
+    /* KATEGORI LOKASI */
+
+    .containerkategori {
+        display: none;
+    }
+
+    .containerkategorimobile {
+        flex-direction: column;
+        padding: 25px 40px;
+    }
+
+    /* ACTIVE RESPONSIF */
+
+    .headlinebannermobile {
+        display: block;
+    }
+
+    .mobilebanner {
+        display: block;
+    }
+
+    .containerkategorimobile {
+        display: block;
+    }
+
+}

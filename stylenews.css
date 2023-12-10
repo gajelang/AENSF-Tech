@@ -1,0 +1,227 @@
+/* stylenews.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.eventsmenu, .myticketmenu {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+    background-color: #1d1d1d;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.myticketmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+.eventsmenu:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+.newsmenu {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    border-radius: 40px;
+}
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease; /* Menambahkan transisi untuk perubahan opacity */
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+/* ------ NEWS CONTAINER ------ */
+
+.headlinenews{
+    display: flex;
+    align-items: center;
+    font-size: 7em;
+    font-weight: bold;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - 20px), 1fr));
+    gap: 20px;
+    margin: 40px;
+    margin-top: 80px;
+}
+
+.news-article {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.news-article img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.news-article h2 {
+    margin: 20px 30px 0 30px;
+}
+
+.news-text {
+    padding: 30px;
+}
+
+.article-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px 40px 30px;
+}
+
+.date {
+    margin: 0;
+}
+
+.read-more {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Variation 2 */
+.read-more:hover {
+    background-color: #0009e7;
+    border-style: solid;
+    border-color: #0009E7;
+    color: #ffffff;
+    padding: 10px 50px;
+    transition: all 0.3s ease;
+}
+
+/* ------ LATEST NEWS ------ */ 
+
+.bigscreen{
+    display: flex;
+}
+
+.leftscreen {
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.leftscreen p{
+    font-size: 3.3em;
+}
+
+.leftscreen a{
+    width: 30%;
+    padding: 10px 5px;
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.leftscreen a:hover {
+    background-color: #0009e7;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.latest-news {
+    margin: 0 40px;
+    background-color: rgb(33, 33, 33);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.latest-news h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Archivo;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+    margin-bottom: 40px;
+
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.leftside img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 1.3em;
+    transition: all 0.3s ease; /* Efek transisi agar perubahan lebih mulus */
+    background-color: #1d1d1d;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+
+.menu a:hover {
+    padding: 10px 65px;
+    background-color: #0009E7;
+    transition: all 0.3s ease;
+}
+
+
+.logout {
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 25px;
+    background-color: #a20303;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Menambahkan transisi untuk perubahan background-color */
+}
+
+.logout:hover {
+    background-color: #a20303;
+}
+
+.logout-text {
+    display: none; /* Mulai dengan menyembunyikan teks Logout */
+    transition: opacity 0.3s ease; /* Menambahkan transisi untuk perubahan opacity */
+}
+
+.logout:hover .logout-text {
+    display: inline-block; /* Tampilkan teks Logout saat dihover */
+    opacity: 1; /* Menetapkan opacity ke 1 saat dihover */
+}
+
+.login {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.signup {
+    background-color: #0009E7;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+/* Event Detail styles */
+.event-detail-container {
+    max-width: 100%;
+    margin: 20px 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-detail-card {
+}
+
+.event-detail-card img {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.eventdescription {
+    justify-content: center;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+.event-detail-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.event-detail-date,
+.event-detail-location,
+.event-detail-price {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.event-detail-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    display: flex;
+}
+
+.event-info {
+    width: 60%;
+}
+
+
+/* Style untuk bagian pembelian tiket */
+.eventdescription {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pembeliantiket {
+    max-width: 30%;
+}
+
+.ticket-options {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-options h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ticket-options ul li {
+    margin: 10px 0;
+}
+
+.SelectType, .ticketquantity {
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.SelectType label, .ticketquantity label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.SelectType select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ticketquantity input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.event-details {
+    display: flex;
+}
+
+.event-info {
+    width: 60%;
+}
+
+/* Style for the event description */
+.eventdescription {
+    max-width: 100%; /* Ensures the description doesn't exceed the container */
+    overflow-wrap: break-word; /* Allows long words to be broken and wrap to the next line */
+}
+
+
+.ticket-info-text p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
